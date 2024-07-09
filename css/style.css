@@ -1,6 +1,13 @@
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+:root{
+    --bs-secondary:#eabd09;
+    --bs-white: #171714;
+    --bs-primary: #fff;
+}
+
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -206,6 +213,10 @@
     transition: .5s;
 }
 
+#rang{
+    background-color: #171714;
+}
+
 .sticky-top .navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--bs-primary) !important;
@@ -263,7 +274,6 @@
 @media (max-width: 991.98px) {
     .sticky-top {
         position: relative;
-        background: var(--bs-white);
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -290,9 +300,6 @@
 }
 
 @media (min-width: 991.98px) {
-    .sticky-top .navbar-light {
-        background: var(--bs-light) !important;
-    }
 
     /*** Top and Bottom borders go out ***/
     .navbar-light .navbar-nav .nav-link:after,
@@ -879,11 +886,11 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-primary);
+    background: var(--bs-white);
 }
 .footer .footer-item a {
     line-height: 30px;
-    color: var(--bs-white);
+    color: var(--bs-primary);
     transition: 0.5s;
 }
 
@@ -900,5 +907,8 @@
 
 
 .text-secondary{
-    color: yellow; !important
+    color: #eabd09 !important;
+}
+.border-secondary{
+    border-color: #ffd103 !important;
 }
